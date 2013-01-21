@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fractal Knoch</title>
+</head>
+
+<body>
+	<noscript>
+	    <p>Welcome</p>
+	    <p>This web site requires Java to be activated.</p>
+	</noscript>
+	<p>
+        <applet id ="ggbApplet" name="ggbApplet"code="geogebra.GeoGebraApplet"  
+        archive="geogebra.jar" 
+        codebase="http://jars.geogebra.org/webstart/4.0" 
+        width="780" height="780">   
+	        <param name="framePossible" value="false"/>
+	        <param name="showToolBar" value="true"/>
+	        <param name="showAlgebraInput" value="false"/>
+	        <param name="allowRescaling" value="true"/>
+	        <param name="language" value="en"/>
+	        <param name="showMenuBar" value="true"/>
+	        <param name="framePossible" value="false" />
+	        <param name="showResetIcon" value="true" />
+            <!-- ... -->
+        </applet>
+
+        <script type="text/javascript" src="js/koch.js"></script>
+   	</p>
+   	<p>
+   		<div id="input">	
+   			<form action="triangulo_submit" method="get" accept-charset="utf-8">
+				Niveles: <input type="text" id="niveles" name="niveles" size="2" onKeyPress="return caracterPermitido(event)">
+				<input type="button" value="ok" onclick="inicial();">	<br/>
+			</form>		   
+		</div>
+   	</p>
+   	<p>
+
+	</p>
+
+</body>
+
+</html>
